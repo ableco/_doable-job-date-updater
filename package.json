@@ -58,5 +58,12 @@
     "tslib": "^2.3.0",
     "typescript": "^4.3.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "blitz": "^0.38.6",
+    "date-fns": "^2.23.0",
+    "zod": "^3.5.1"
+  },
+  "resolutions": {
+    "typescript": "4.3.5"
+  }
 }
