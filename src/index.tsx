@@ -1,6 +1,17 @@
 import * as React from 'react';
+import { Task } from './external/types';
 
-// Delete me
-export const Thing = () => {
-  return <div>the snozzberries taste like snozzberries</div>;
+export const TaskDueDate = ({ task }: { task: Task }) => {
+  const handleDateClick = () => {};
+
+  return (
+    <button onClick={handleDateClick}>
+      {task.dueDate ? (
+        // format(task.dueDate, 'MMMM dd')
+        '...'
+      ) : (
+        <span className="underline">Add Date</span>
+      )}
+    </button>
+  );
 };
